@@ -17,7 +17,9 @@ function UserContext({ children }) {
   };
   return (
     <div>
-      <dataContext.Provider value={data}>{children}</dataContext.Provider>
+      <dataContext.Provider value={data}>
+        {children}
+        </dataContext.Provider>
     </div>
   );
 }
